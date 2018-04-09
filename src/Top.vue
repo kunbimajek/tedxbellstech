@@ -6,7 +6,7 @@
 
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-  <b-navbar-brand href="#"> <img src="..\src\assets\img\book.png" height="23px"> Book a Seat </b-navbar-brand>
+  <b-navbar-brand href="#"> <img src="./assets/img/book.png" height="23px"> Book a Seat </b-navbar-brand>
 
   <b-collapse is-nav id="nav_collapse">
 

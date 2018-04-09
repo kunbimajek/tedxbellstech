@@ -9,25 +9,33 @@
             <b-container class="bv-example-row">
                 <div class="box-group">
                     <b-row>
-                        <b-col class="box">
-                            <img src="../src/assets/img/clock.png" class="icon-prop1">
-                            <p><b>DATE</b><p>
-                            <p>5th May 2018</p> 
+                        <b-col md="3">
+                            <div class="box">
+                                <img src="../src/assets/img/clock.png" class="icon-prop1">
+                                <p><b>DATE</b></p>
+                                <p>5th May 2018</p> 
+                            </div>
                         </b-col>
-                        <b-col class="box">
-                            <img src="../src/assets/img/location.png" class="icon-prop2">
-                            <p><b>LOCATION</b><p>
-                            <p>Bells University, Ota</p>
+                        <b-col md="3">
+                            <div class="box">
+                                <img src="../src/assets/img/location.png" class="icon-prop2">
+                                <p><b>LOCATION</b></p>
+                                <p>Bells University, Ota</p>
+                            </div>
                         </b-col>
-                        <b-col class="box">
-                            <img src="../src/assets/img/bookW.png" class="icon-prop3">
-                            <p><b>SEATS</b><p>
-                            <p>150 People</p>
+                        <b-col md="3">
+                            <div class="box">
+                                <img src="../src/assets/img/bookW.png" class="icon-prop3">
+                                <p><b>SEATS</b></p>
+                                <p>150 People</p>
+                            </div>
                         </b-col>
-                        <b-col class="box">
-                            <img src="../src/assets/img/speaker.png" class="icon-prop4">
-                            <p><b>SPEAKERS</b><p>
-                            <p>12 Experts</p>
+                        <b-col md="3">
+                            <div class="box">
+                                <img src="../src/assets/img/speaker.png" class="icon-prop4">
+                                <p><b>SPEAKERS</b></p>
+                                <p>12 Experts</p>
+                            </div>
                         </b-col>
                     </b-row>
                 </div>
@@ -38,13 +46,13 @@
             <b-container class="bv-example-row">
             
                     <b-row>
-                        <b-col cols="6" class="left">
+                        <b-col md="6" class="left">
                             <p>--ABOUT THE EVENT--<p>
                             <h5 class="p-h5">EXEUTE . AWAKEN . INSPIRE</h5>
                             <p class="paragraph">Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium Lorem ipsium</p>
                             <button class="red-btn" style="margin-top: 1.9rem;">More</button>
                         </b-col>
-                        <b-col C>
+                        <b-col md="6">
                             <p class="image"></p>
                         </b-col>
                     </b-row>
@@ -57,7 +65,7 @@
              <b-container class="bv-example-row">
                 <p>--MEET THE SPEAKERS--<p>
                 <h5 class="p2-h5">SPEAKERS</h5>           
-                <carousel-3d :controls-visible="true">
+                <carousel-3d :autoplay="true" :controls-visible="true">
                     <slide :index="0">
                     
                     </slide>
@@ -125,8 +133,8 @@
     .info .box{
         background-color: #E62B1E;
         text-align: left;
-        margin: 0 20px;
         padding-top: 15px;
+        height: 100%;
         box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.2);
     }
     .info .box p{
@@ -135,10 +143,7 @@
         font-size: 15px;
     }
     .info .box-group{
-        position: absolute;
-        top: 430px;
-        width: 1100px;
-        z-index: 2;
+        margin-top: -70px;
     }
     .icon-prop1{
         width: 25%;
@@ -164,13 +169,13 @@
     .about .left{
         text-align: right;
         padding-top: 10px;
+        margin-bottom: 20px;
     }
     .about .image{
         border: 1px solid black;
         background-color: black;
         height: 320px;
-        width: 400px;
-        margin-left: 30px;
+        width: 360px;
     }
 
     .slider, .wit{
